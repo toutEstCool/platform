@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,body {
+  font-family: Roboto, sans-serif;
+}
+
+/* ------------------- Fonts ------------------- */
+@font-face {
+  font-display: swap;
+  font-family: Robot;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/Roboto-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  src: url(/fonts/Roboto-Medium.woff) format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts/Roboto-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Golos;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/Golos-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Golos;
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts/Golos-Bold.woff) format("woff");
+}
