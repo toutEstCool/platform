@@ -1,34 +1,87 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Платформа мероприятий и курсов Ogogo Academy :paw_prints:
 
-## Getting Started
-
-First, run the development server:
+Для запуска используйте команду:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+Запустить: yarn run dev
+Собрать: yarn run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Описание проекта
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Данный проект нацелен на закрепление материала и практики в команде
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [Figma Design](https://figma.com) - тут будет ссылка на макет
+- [Chat for developers](https://chat.com) - чат разработчиков
 
-## Learn More
+- [Kanban Board](https://github.com/vercel/next.js/) - Kanban доска проекта
+---
+## Информация по Git-PR
+Следуя этим инструкциям, вы получите копию проекта, которая будет запущена на вашем локальном компьютере для целей разработки и тестирования.
 
-To learn more about Next.js, take a look at the following resources:
+#### Предпосылки
+Для установки в вашей системе требуется следующее программное обеспечение:
+- Node 18.x
+- Yarn v5
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Введите следующие команды в терминале, чтобы проверить версии вашего узла и npm:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+node -v
+yarn -v
+```
+---
+### Доступные скрипты
+---
+В каталоге проекта вы можете запустить:
+```bash
+yarn start
+```
+Запускает приложение в режиме разработки.
+Открытый http://localhost:3000 чтобы просмотреть его в вашем браузере.
 
-## Deploy on Vercel
+Страница перезагрузится, когда вы внесете изменения.
+Вы также можете увидеть любые ошибки lint в консоли.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Установка
+---
+Выполните следующие действия, чтобы запустить среду разработки.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+git clone https://github.com/toutEstCool/platform.git
+```
+_ИЛИ С ПОМОЩЬЮ SSH_
+```bash
+  git@github.com:toutEstCool/platform.git
+  ```
+- Установка node modules
+```bash
+yarn install
+ ```
+### Запустить front-end servers
+```bash
+yarn start
+```
+---
+
+## Branches
+
+Prefixes for branches
+* feature - feature, task, spike
+* fix - bugs
+
+A branch name should be named in following format:
+
+`<prefix>/pm-<clickupTaskId>/<brief-task-name>`
+
+Commit messages should be detailed and be descriptive in following format:
+
+- Write commit messages as a sentence
+- Make sure one commit does just one thing
+- Use present tense for verbs in the commit description
+- The description should clearly describe the changes which were done within the code or any other artifacts included into the commit
+
+Pull Requests (PR)
+- After receiving 3 approvals, the developer must execute Squash and Merge
+- Use a default PR template
+- PR name should follow a template `[PM-clickupTaskId]: task-name`
